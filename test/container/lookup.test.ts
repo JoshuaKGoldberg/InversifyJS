@@ -63,7 +63,7 @@ describe("Lookup", () => {
   it("Should be clonable", () => {
 
     const lookup = new Lookup<interfaces.Clonable<any>>();
-    const key1 = Symbol.for("TEST_KEY");r
+    const key1 = Symbol.for("TEST_KEY");
 
     class Warrior {
       public kind: string;
