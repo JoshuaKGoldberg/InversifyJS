@@ -31,7 +31,6 @@ class Request implements interfaces.Request {
             this.requestScope = parentRequest === null
                 ? new Map<any, any>()
                 : null;
-
     }
 
     public addChildRequest(
