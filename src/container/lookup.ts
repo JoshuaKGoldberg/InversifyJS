@@ -91,7 +91,9 @@ class Lookup<T extends interfaces.Clonable<T>> implements interfaces.Lookup<T> {
         const copy = new Lookup<T>();
 
         this._map.forEach((value, key) => {
-            value.forEach((b) => copy.add(key, b.clone()));
+            value.forEach((b) => {
+                copy.add(key, b.clone());
+            });
         });
 
         return copy;

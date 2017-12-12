@@ -140,7 +140,6 @@ function getClassPropsAsTargets(metadataReader: interfaces.MetadataReader, const
     const keys = Object.keys(classPropsMetadata);
 
     for (const key of keys) {
-
         // the metadata for the property being injected
         const targetMetadata = classPropsMetadata[key];
 

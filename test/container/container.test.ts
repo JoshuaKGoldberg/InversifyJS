@@ -121,14 +121,14 @@ describe("Container", () => {
       expect(map.has(ninjaId)).eql(false);
       expect(map.size).eql(0);
 
-  });
+    });
 
     it("Should throw when cannot unbind", () => {
       const serviceIdentifier = "Ninja";
       const container = new Container();
       const throwFunction = () => { container.unbind("Ninja"); };
       expect(throwFunction).to.throw(`${ERROR_MSGS.CANNOT_UNBIND} ${getServiceIdentifierAsString(serviceIdentifier)}`);
-  });
+    });
 
     it("Should unbind a binding when requested", () => {
 
